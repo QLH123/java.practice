@@ -1,7 +1,7 @@
 public class Test2{
     public static int arrayMaxElement(int[] data){
-        int max=data[0];
-         for (int i=1;i<data.length;i++){
+        int max=data[0];        
+         for (int i=1;i<data.length;i++){    
              if(data[i]>max){
                max=data[i];
              }
@@ -19,8 +19,8 @@ public class Test2{
     } 
     public static int arrayElementSum(int[] data){
         int sum=0;
-        for (int i=0;i<data.length;i++){
-            sum+=data[i];
+        for (int i=0;i<data.length;i++){    
+            sum+=data[i];                 
             }
             return sum;
         }
@@ -46,9 +46,9 @@ public class Test2{
             return k;
         }    
     public static void printArray(int[] data){
-        for (int i=0;i<data.length;i++){
-           System.out.print(data[i]+",");
-            } 
+        for (int i=0;i<data.length;i++){    //for (int i : data){
+           System.out.print(data[i]+",");    //System.out.print(i);
+            }  
         }
     public static void printReversal(int[] data){
         int temp=0;
@@ -56,7 +56,7 @@ public class Test2{
         int j=data.length;
         while(i<j){
             temp=data[i];
-            data[i]=data[j-1];
+            data[i]=data[j-1];     //从后边输出
             data[j-1]=temp;
             j--;
             i++;
@@ -69,7 +69,7 @@ public class Test2{
         int[] s=new int[arr.length+num.length];
         int[] m=new int[4];
         int max= arrayMaxElement(arr);
-        System.out.print(max+"\n");
+        System.out.print(max+"\n");     //合成  
         int min=arrayMinElement(arr); 
         System.out.print(min+"\n");
         int sum1=arrayElementSum(arr);
