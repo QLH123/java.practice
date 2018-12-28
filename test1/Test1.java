@@ -2,11 +2,11 @@ public class Test1{
    //  public static void main(String[] args) {
     // for(int i=1;i<10;i++){
         //  for (int j=1;j<=i;j++){
-                   // System.out.print(i);
-                   // System.out.print('*');
-                   // System.out.print(j);
-                   // System.out.print('=');
-                   // System.out.print(i*j);
+                   //// System.out.print(i);
+                   //// System.out.print('*');
+                   //// System.out.print(j);
+                   //// System.out.print('=');
+                   //// System.out.print(i*j);
                   //  System.out.print(i+"*"+j+"="+i*j+"\t");
         //   }
       //   System.out.println("\n");
@@ -18,11 +18,12 @@ public class Test1{
     System.out.println(numRecur(5));
   }
     public static long numRecur(int k){
-         if (k>1){
-         return (k*numRecur(k-1));
-       }
+         if (k==1){
+            return 1L;   //控制返回值
+          }
        else {
-       return 1;
+        return (k*numRecur(k-1));
        }
   }
-} 
+}
+ 
